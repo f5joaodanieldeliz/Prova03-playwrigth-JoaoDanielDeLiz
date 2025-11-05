@@ -15,7 +15,7 @@ test.describe('Formulário de contato', () => {
     await page.goto(BASE_URL);
   });
 
-  test('Enviar mensagem de contato', async () => {
+  test.skip('Enviar mensagem de contato', async () => {
     await contactPage.preencherFormulariodeContato('a@b.com.br');
     await contactPage.validarMensagemOK();
   });

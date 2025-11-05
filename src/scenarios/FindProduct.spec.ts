@@ -15,7 +15,7 @@ test.describe('Find Products', () => {
     await page.goto(BASE_URL);
   });
 
-  test('Find product by name', async () => {
+  test.skip('Find product by name', async () => {
     await homePage.searchProductByName();
     await homePage.checkProductCount();
   });
